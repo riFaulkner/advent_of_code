@@ -1,0 +1,27 @@
+{
+  "name": "scala",
+  "argv": [
+    "/Users/rick/Library/Caches/Coursier/arc/https/github.com/scala/scala3/releases/download/3.6.1/scala3-3.6.1-aarch64-apple-darwin.tar.gz/libexec/scala-cli",
+    "--cli-default-scala-version",
+    "3.6.1",
+    "--repository",
+    "file:///Users/rick/Library/Caches/Coursier/arc/https/github.com/scala/scala3/releases/download/3.6.1/scala3-3.6.1-aarch64-apple-darwin.tar.gz/maven2",
+    "--prog-name",
+    "scala",
+    "--skip-cli-updates",
+    "bsp",
+    "--json-options",
+    "/Users/rick/Documents/workspace/advent_of_code/2024/days/02/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/Users/rick/Documents/workspace/advent_of_code/2024/days/02/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/Users/rick/Documents/workspace/advent_of_code/2024/days/02/.scala-build/ide-envs.json",
+    "/Users/rick/Documents/workspace/advent_of_code/2024/days/02/day2.scala"
+  ],
+  "version": "1.5.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
