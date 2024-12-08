@@ -12,7 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    working-directory: ./2023
+    defaults:
+      run:
+        working-directory: ./2023
     steps:
     - uses: actions/checkout@v3
 
