@@ -57,7 +57,7 @@ func TestDay01Cases(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := processLine(tt.args.turns, tt.args.currentPosition, tt.args.part, true); got != tt.want {
+			if got := processLine(tt.args.turns, tt.args.currentPosition, tt.args.part, false); got != tt.want {
 				t.Errorf("processLine() = %v, want %v", got, tt.want)
 			}
 		})
