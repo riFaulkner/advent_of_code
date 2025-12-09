@@ -31,6 +31,10 @@ func main() {
 		result = aoc.Day02(puzzlePath+"02-p1.txt", int(part), false)
 	case 3:
 		result = aoc.Day03(puzzlePath+"03-p1.txt", int(part), false)
+	case 5:
+		result = aoc.Day05(puzzlePath+"05-p1.txt", int(part), false)
+	case 6:
+		result = aoc.Day06(puzzlePath+"06.txt", int(part))
 	}
 
 	fmt.Printf("Result for Day %d Part %d: %v\n", day, part, result)

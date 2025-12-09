@@ -10,3 +10,11 @@ func GetNumberFromBytes(b []byte) int {
 	}
 	return num
 }
+
+func GetNumberFromString(str string) int {
+	num, err := strconv.Atoi(str)
+	if err != nil {
+		panic(err)
+	}
+	return num
+}
