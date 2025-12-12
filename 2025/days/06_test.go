@@ -21,8 +21,6 @@ func TestDay06(t *testing.T) {
 		{name: "Part 1 Puzzle input", args: args{filepath: d6PuzzleInputPath, part: 1}, want: 5316572080628},
 		{name: "Part 2 Test input", args: args{filepath: d6TestInputPath, part: 2}, want: 3263827},
 		{name: "Part 2 Puzzle input", args: args{filepath: d6PuzzleInputPath, part: 2}, want: 5316572080628},
-
-		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
