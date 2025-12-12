@@ -8,8 +8,8 @@ import (
 func Day04(filepath string, part int) int {
 	file, _ := os.ReadFile(filepath)
 	grid := bytes.Split(file, []byte("\n"))
-	roll := []byte("@") // yuk
-	dot := []byte(".")
+	roll := byte('@')
+	dot := byte('.')
 	sum := 0
 	startSum := -1
 
@@ -18,11 +18,11 @@ func Day04(filepath string, part int) int {
 
 		for r := range grid {
 			for c := range grid[r] {
-				if grid[r][c] == roll[0] {
+				if grid[r][c] == roll {
 					if checkSurrounding(grid, r, c) {
 						sum++
 						if part == 2 {
-							grid[r][c] = dot[0]
+							grid[r][c] = dot
 						}
 					}
 				}
