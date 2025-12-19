@@ -1,6 +1,9 @@
 package aoc
 
-import "strconv"
+import (
+	"fmt"
+	"strconv"
+)
 
 func GetNumberFromBytes(b []byte) int {
 	str := string(b)
@@ -17,4 +20,13 @@ func GetNumberFromString(str string) int {
 		panic(err)
 	}
 	return num
+}
+
+func GetFileName(day int, puzzle bool) string {
+	f := "tests"
+	if puzzle {
+		f = "puzzles"
+	}
+
+	return fmt.Sprintf("../inputs/%s/%d.txt", f, day)
 }

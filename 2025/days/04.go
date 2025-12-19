@@ -8,6 +8,7 @@ import (
 func Day04(filepath string, part int) int {
 	file, _ := os.ReadFile(filepath)
 	grid := bytes.Split(file, []byte("\n"))
+
 	roll := byte('@')
 	dot := byte('.')
 	sum := 0

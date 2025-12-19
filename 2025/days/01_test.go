@@ -5,12 +5,9 @@ import (
 	"testing"
 )
 
-const (
-	testFilePath   = "../inputs/tests/01-p1.txt"
-	puzzleFilePath = "../inputs/puzzles/01-p1.txt"
-)
-
 func TestDay01(t *testing.T) {
+	testFilePath := GetFileName(1, false)
+	puzzleFilePath := GetFileName(1, true)
 	type args struct {
 		filepath string
 		part     int
@@ -27,7 +24,7 @@ func TestDay01(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Day01(tt.args.filepath, tt.args.part, true); got != tt.want {
+			if got := Day01(tt.args.filepath, tt.args.part, false); got != tt.want {
 				t.Errorf("Day01() = %v, want %v", got, tt.want)
 			}
 		})

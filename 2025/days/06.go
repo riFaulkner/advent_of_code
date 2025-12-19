@@ -14,6 +14,7 @@ func Day06(filepath string, part int) int {
 
 	file, _ := os.Open(filepath)
 	defer file.Close()
+
 	scanner := bufio.NewScanner(file)
 
 	// For each line, scan it, if its numbers load it into the slice of slices. if its the final row, perform the arithmetic

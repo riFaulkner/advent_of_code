@@ -2,12 +2,9 @@ package aoc
 
 import "testing"
 
-const (
-	d4TestInputPath   = "../inputs/tests/04.txt"
-	d4PuzzleInputPath = "../inputs/puzzles/04.txt"
-)
-
 func TestDay04(t *testing.T) {
+	testFilepath := GetFileName(4, false)
+	puzzleFilepath := GetFileName(4, true)
 	type args struct {
 		filepath string
 		part     int
@@ -17,10 +14,10 @@ func TestDay04(t *testing.T) {
 		args args
 		want int
 	}{
-		{name: "Part 1 Test Input", args: args{filepath: d4TestInputPath, part: 1}, want: 13},
-		{name: "Part 1 Puzzle Input", args: args{filepath: d4PuzzleInputPath, part: 1}, want: 1457},
-		{name: "Part 2 Test Input", args: args{filepath: d4TestInputPath, part: 2}, want: 43},
-		{name: "Part 2 Puzzle Input", args: args{filepath: d4PuzzleInputPath, part: 2}, want: 8310},
+		{name: "Part 1 Test Input", args: args{filepath: testFilepath, part: 1}, want: 13},
+		{name: "Part 1 Puzzle Input", args: args{filepath: puzzleFilepath, part: 1}, want: 1457},
+		{name: "Part 2 Test Input", args: args{filepath: testFilepath, part: 2}, want: 43},
+		{name: "Part 2 Puzzle Input", args: args{filepath: puzzleFilepath, part: 2}, want: 8310},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
